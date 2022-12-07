@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Days-->
+    <select>
+        <option>Days</option>
+        <script>
+            var day = 1, res ="";
+            while(day<=31){
+                res+=`<option>${day}</option>`
+                day++;
+            }
+            document.write(res)
+        </script>
+    </select>
+
+    <!-- <select>
+        <option>Days</option>
+        <script>
+            var day = 1
+            while(day<=31){
+                document.write(`<option>${day}</option>`)
+                day++;
+            }
+        </script> -->
+<!--months-->
+        <select>
+            <option>months</option>
+            <script>
+                var month = 1, res ="";
+                while(month<=12){
+                    res+=`<option>${month}</option>`
+                    month++;
+                }
+                document.write(res)
+            </script>
+        </select>
+<!--years-->
+       <!-- <select>
+         <option>Years</option>
+         <script>
+            var year = 1901 , res="";
+            while(year<=2022){
+                res+=`<option>${year}</option>`
+                year++;
+            }
+            document.write(res)
+         </script>
+       </select> -->
+
+       <select>
+         <option>Years</option>
+         <script>
+            var year=2022, res="";
+            while(year>=1901)
+            {
+                res+=`<option>${year}</option>`
+                year--;
+            }
+            document.write(res)
+         </script>
+       </select>
+
+
+</body>
+</html>
